@@ -18,12 +18,12 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('AXIOFIT_THEME_VERSION')) {
-    define('AXIOFIT_THEME_VERSION', '1.0.0');
+    define('AXIOFIT_THEME_VERSION', '1.0.1');
 }
 
 // Define theme directory path
 if (!defined('AXIOFIT_THEME_DIR')) {
-    define('AXIOFITL_THEME_DIR', trailingslashit( get_stylesheet_directory() ));
+    define('AXIOFIT_THEME_DIR', trailingslashit( get_stylesheet_directory() ));
 }
 
 // Define theme directory URI
@@ -45,7 +45,7 @@ use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 /*--------------------------------------------------------------*/
 /*------------------ Theme Update Checker ----------------------*/
 /*--------------------------------------------------------------*/
-if ( 'minimal' === CURRENT_THEME_NAME ) {
+if ( 'axiofit' === CURRENT_THEME_NAME ) {
 	$minimalUpdateChecker = PucFactory::buildUpdateChecker(
 		'https://github.com/rankfoundry/axiofit-theme/',
 		AXIOFIT_THEME_DIR . '/functions.php',
